@@ -5,6 +5,6 @@ export class PedidosStatus {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ length: 255, default: ["Solicitado", "Concluido", "Cancelado"] })
+  @Column({ length: 255 })
   descricao: string;
 }

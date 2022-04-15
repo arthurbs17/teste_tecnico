@@ -1,7 +1,4 @@
-import { PedidosStatus } from "../../entities/PedidosStatus";
-
 interface PedidosStatusInterface {
-  id: number;
   descricao: string;
 }
 
