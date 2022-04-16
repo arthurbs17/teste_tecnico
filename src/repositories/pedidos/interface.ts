@@ -8,7 +8,7 @@ interface PedidoInterface {
   data: Date;
   ativo: number;
   cliente: Clientes;
-  pedido_status_id: PedidosStatus;
+  pedido_status_id: number;
 }
 
 interface PedidoRepo {

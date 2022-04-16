@@ -5,6 +5,9 @@ import { StatusCodes } from "http-status-codes";
 const criarPedidoController = async (req: Request, res: Response) => {
   try {
     const data = req.validated;
+    const { cliente_id } = req.params;
+    data.cliente_id = cliente_id;
+
     const novoPedido: Pedidos = await new PedidoRepository().cadastrarPedido(
       data
     );

@@ -19,9 +19,15 @@ export class Pedidos {
   @Column({ type: "smallint" })
   ativo: number;
 
+  @Column()
+  cliente_id: number;
+
+  @Column({ default: 1 })
+  pedido_status_id: number;
+
   @ManyToOne((type) => Clientes, (cliente) => cliente.id)
   cliente: Clientes;
 
   @ManyToOne((type) => PedidosStatus, (pedido_status) => pedido_status.id)
-  pedido_status_id: PedidosStatus;
+  pedido_status: PedidosStatus;
 }
