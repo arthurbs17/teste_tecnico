@@ -1,3 +1,4 @@
+import { UpdateResult } from "typeorm";
 import { PedidosStatus } from "../../entities/PedidosStatus";
 import { Clientes } from "../clientes";
 

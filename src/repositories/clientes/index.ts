@@ -1,4 +1,4 @@
-import { Repository, getRepository } from "typeorm";
+import { Repository, getRepository, UpdateResult } from "typeorm";
 import { ClienteInterface, ClienteRepo } from "./interface";
 import { Clientes } from "../../entities/Clientes";
 
@@ -13,6 +13,9 @@ class ClienteRepository implements ClienteRepo {
     await this.ormRepo.save(cliente);
 
   visualizarClientes = async () => await this.ormRepo.find();
+
+  pegarClientePorId = async (id: number) =>
+    await this.ormRepo.findOne({ where: { id } });
 }
 
 export { ClienteRepository, Clientes };

@@ -10,6 +10,7 @@ interface ClienteInterface {
 interface ClienteRepo {
   criarCliente: (cliente: ClienteInterface) => Promise<ClienteInterface>;
   visualizarClientes: () => Promise<ClienteInterface[]>;
+  pegarClientePorId: (id: number) => Promise<ClienteInterface>;
 }
 
 export { ClienteInterface, ClienteRepo };

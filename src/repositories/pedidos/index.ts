@@ -1,4 +1,4 @@
-import { Repository, getRepository } from "typeorm";
+import { Repository, getRepository, UpdateResult } from "typeorm";
 import { PedidoInterface, PedidoRepo } from "./interface";
 import { Pedidos } from "../../entities/Pedidos";
 
