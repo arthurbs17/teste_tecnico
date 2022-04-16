@@ -3,6 +3,7 @@ import visualizarClientesController from "./visualizarClientes.controller";
 import criarPedidoController from "./criarPedido.controller";
 import visualizarPedidosController from "./visualizarPedidos.controller";
 import enviarImagemController from "./enviarImagem.controller";
+import exportCSVFileController from "./exportCSVfile.controller";
 
 export {
   criarClienteController,
@@ -10,4 +11,5 @@ export {
   criarPedidoController,
   visualizarPedidosController,
   enviarImagemController,
+  exportCSVFileController,
 };

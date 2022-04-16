@@ -6,6 +6,7 @@ import {
   criarPedidoController,
   visualizarPedidosController,
   enviarImagemController,
+  exportCSVFileController,
 } from "./controllers";
 import { clienteShape, pedidoShape } from "./shapes";
 import multer from "multer";
@@ -27,5 +28,6 @@ route.post(
 
 route.get("/clientes", visualizarClientesController);
 route.get("/pedidos", visualizarPedidosController);
+route.get("/download/csv", exportCSVFileController);
 
 export default route;
