@@ -8,7 +8,7 @@ export class Clientes {
   @Column({ length: 255 })
   nome: string;
 
-  @Column({ length: 15 })
+  @Column({ length: 15, unique: true })
   cpf: string;
 
   @Column()
