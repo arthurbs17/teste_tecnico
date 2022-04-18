@@ -174,7 +174,7 @@ RESPONSE FORMAT STATUS 200
 
 ---
 
-## Created User:
+## Exportar arquivo CSV:
 
 `GET /download/csv`
 
