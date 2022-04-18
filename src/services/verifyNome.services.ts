@@ -4,7 +4,7 @@ const isNumber = (str) => {
 
 const verifyNomeServices = (nome: string) => {
   for (let i = 0; i < nome.length; i++) {
-    if (isNumber(nome[i])) {
+    if (isNumber(nome[i]) && nome[i] !== " ") {
       throw new Error("Nome inválido!");
     }
   }
